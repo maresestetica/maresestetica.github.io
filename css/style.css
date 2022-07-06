@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5,
 }
 
 .btn.btn-outline-primary {
-  color: #ea728c;
+  color: #1877f2;
   border-width: 2px;
 }
 
@@ -132,7 +132,7 @@ h1, h2, h3, h4, h5,
 
 .btn.btn-outline-white:hover {
   background: #fff;
-  color: #ea728c !important;
+  color: #1877f2 !important;
 }
 
 .btn.btn-md {
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5,
 }
 
 .form-control:active, .form-control:focus {
-  border-color: #ea728c;
+  border-color: #1877f2;
 }
 
 .form-control:hover, .form-control:active, .form-control:focus {
