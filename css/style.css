@@ -195,7 +195,7 @@ h1, h2, h3, h4, h5,
   position: absolute;
   width: 100px;
   height: 1px;
-  background: #ea728c;
+  background: #1877f2;
 }
 
 .site-section-heading.text-center:after {
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5,
   position: absolute;
   width: 100px;
   height: 1px;
-  background: #ea728c;
+  background: #1877f2;
 }
 
 .border-top {
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5,
 }
 
 .site-footer a:hover {
-  color: #ea728c;
+  color: #1877f2;
 }
 
 .site-footer ul li {
@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5,
 }
 
 .site-navbar .site-navigation .site-menu .active > a span {
-  color: #ea728c;
+  color: #1877f2;
   border-radius: 30px;
   display: inline-block;
   padding: 5px 20px;
