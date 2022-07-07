@@ -651,7 +651,7 @@ h1, h2, h3, h4, h5,
   width: 300px;
   position: fixed;
   right: 0;
-  z-index: 2000;
+  z-index: 9999;
   padding-top: 20px;
   background: #fff;
   height: calc(100vh);
@@ -2633,20 +2633,20 @@ h1, h2, h3, h4, h5,
 
 .block-quick-info-2 {
   padding: 2rem 0;
-  border-radius: 5px;
-  box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
-  -webkit-box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
-  -moz-box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
+  
 }
 
 .block-quick-info-2 .block-quick-info-2-inner {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   padding: 30px;
   background: #fff;
   margin-top: -80px;
-  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 9px 19px 2px rgba(0,0,0,0.75);
+
+  border-radius: 5px;
 }
 
 .block-quick-info-2 .quick-info-2 .icon {
@@ -2661,7 +2661,11 @@ h1, h2, h3, h4, h5,
 }
 
 .block-quick-info-2 .quick-info-2 .text .excerpt {
-  color: #b3b3b3;
+  color: #999;
+}
+.block-quick-info-2 .quick-info-2 .text .excerpt1 {
+  color: #03bb85;
+  font-weight: bold;
 }
 
 .block-services-1 {
@@ -2808,7 +2812,7 @@ h1, h2, h3, h4, h5,
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(234, 114, 140, 0.9);
+  background: rgba(3, 187, 133, 0.8);
 }
 
 .subscription .form-control {
