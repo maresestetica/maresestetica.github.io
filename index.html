@@ -515,9 +515,9 @@
           <div class="mb-4 mb-lg-4 col-sm-6 col-md-6 col-lg-3">
             <div class="block-service-1-card">
               <a href="#" class="thumbnail-link d-block mb-4"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="block-service-1-heading mb-3"><a href="#">Lifting de pestañas</a></h3>
+              <h3 class="block-service-1-heading mb-3" id="titulo_lifting"><a href="#">Lifting de pestañas</a></h3>
               <div class="block-service-1-excerpt" id="info_lifting"><p>ghjggjgjghjjggjgj.</p></div>
-              <p><a data-toggle="modal" data-target="#exampleModalLong" class="d-inline-flex align-items-center block-service-1-more" id="myModal" onclick="cambio('info_lifting');"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
+              <p><a data-toggle="modal" data-target="#exampleModalLong" class="d-inline-flex align-items-center block-service-1-more" id="myModal" onclick="cambio('info_lifting','titulo_lifting');"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a></p>
             </div>
           </div>
 
@@ -525,10 +525,10 @@
           <div class="mb-4 mb-lg-4 col-sm-6 col-md-6 col-lg-3">
             <div class="block-service-1-card">
               <a href="#" class="thumbnail-link d-block mb-4"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-              <h3 class="block-service-1-heading mb-3"><a href="#">Perfilado de cejas</a></h3>
+              <h3 class="block-service-1-heading mb-3" id="titulo_perfilado"><a href="#">Perfilado de cejas</a></h3>
               <div class="block-service-1-excerpt" id="info_perfilado"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit molestias inventore, id sed, in harum tenetur earum.</p></div>
               <p><a data-toggle="modal" data-target="#exampleModalLong" class="d-inline-flex align-items-center block-service-1-more" id="myModal"><span>Find out more</span> <span class="icon-keyboard_arrow_right icon"></span></a>
-                <input type="button" onclick="cambio('info_perfilado');" value="aasdsa" data-toggle="modal" data-target="#exampleModalLong" >
+                <input type="button" onclick="cambio('info_perfilado','titulo_perfilado');" value="aasdsa" data-toggle="modal" data-target="#exampleModalLong" >
 
               </p>
             </div>
@@ -556,16 +556,21 @@
 
 
 
+<script type="text/javascript">
+ function url_y_movida(){
+  var b = document.getElementById('titulo_modal').textContent;
+    
+
+  a = 'https://wa.me/5492233418056/?text=hola! me interesa el tratamiento ';
+  a = a.concat(b);
+    
+
+  alert(b);
+  window.location.href= a;
+  }
+</script>
 
 
-<script type="text/javascript"> 
-  let abrir = document.querySelectorAll(".info");
-
-abrir.forEach(function(click) {
- click.addEventListener("click", function() {
-  modal.classList.toggle("modal-close");
- })
-}) </script>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
   Launch demo modal
@@ -576,7 +581,7 @@ abrir.forEach(function(click) {
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <h5 class="modal-title" id="titulo_modal">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -585,20 +590,22 @@ abrir.forEach(function(click) {
         s
         <script type="text/javascript">
           document.getElementById("testo").innerHTML = cambio($id).toString();
-         
-         function cambio($id){
+          document.getElementById("titulo_modal").innerHTML = cambio($titulo).toString();
+        
+         function cambio($id, $titulo){
         
           alert(document.getElementById($id).innerHTML);
            document.getElementById("testo").innerHTML = document.getElementById($id).innerHTML;
+           document.getElementById("titulo_modal").innerHTML = document.getElementById($titulo).innerHTML;
          }
          
         </script>
         
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">C</button>
-        
-        <button type="button" class="btn icon-whatsapp"> ¡quiero! </button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-wpp icon-whatsapp" onclick="url_y_movida();"> ¡quiero! </button>
+
       </div>
     </div>
   </div>
