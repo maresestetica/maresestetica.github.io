@@ -117,6 +117,14 @@ h1, h2, h3, h4, h5,
 .btn.btn-primary {
   color: #fff;
 }
+.btn.btn-wpp{
+  color: #25d366;
+  background-color: white;
+}
+.btn.btn-wpp: hover{
+  color: #075e54;
+  background-color: white;
+}
 
 .btn.btn-outline-primary {
   color: #1877f2;
