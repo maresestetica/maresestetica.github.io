@@ -2696,6 +2696,12 @@ h1, h2, h3, h4, h5,
   transition: .3s all ease;
   position: relative;
   display: inline-block;
+    color: #0645AD !important;
+
+}
+
+.no_mostrar{
+  display: none;
 }
 
 .block-services-1 .block-service-1-more .icon {
