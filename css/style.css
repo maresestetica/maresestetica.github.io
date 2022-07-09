@@ -2675,7 +2675,8 @@ h1, h2, h3, h4, h5,
 }
 
 .block-quick-info-2 .quick-info-2 .text .excerpt {
-  color: #999;
+  font-size: 0.9rem;
+  color: #515151;
 }
 .block-quick-info-2 .quick-info-2 .text .excerpt1 {
   color: #03bb85;
